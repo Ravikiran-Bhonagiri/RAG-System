@@ -13,7 +13,6 @@ class DocumentLoader(ABC):
         pass
 
 
-
 class PDFDocumentLoader(DocumentLoader):
     """Concrete implementation for loading PDF documents"""
 
@@ -32,7 +31,8 @@ class WebDocumentLoader(DocumentLoader):
         loader = WebBaseLoader(url)
         documents = loader.load()
         return [{"page_content": doc.page_content, "metadata": doc.metadata} for doc in documents]
-    
+
+
 class TextDocumentLoader(DocumentLoader):
     """Concrete implementation for loading plain text documents"""
 

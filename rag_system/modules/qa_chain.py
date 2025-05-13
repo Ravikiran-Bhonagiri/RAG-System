@@ -6,8 +6,8 @@ from .retriever import Retriever
 from .prompt import RAGPrompt
 
 class QAChain:
+    
     """Handles question answering with RAG"""
-
     def __init__(self, retriever: Retriever, llm: BaseLanguageModel, prompt: RAGPrompt):
         self.retriever = retriever
         self.llm = llm
