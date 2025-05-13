@@ -5,7 +5,7 @@ from .vector_db import VectorDB
 from .retriever import Retriever
 from .prompt import RAGPrompt
 from .qa_chain import QAChain
-from .document_loader import PDFDocumentLoader, WebDocumentLoader
+from .document_loader import PDFDocumentLoader, WebDocumentLoader, TextDocumentLoader, CSVDocumentLoader
 
 __all__ = [ #This is optional but very good practice
     "Chunker",
@@ -16,4 +16,6 @@ __all__ = [ #This is optional but very good practice
     "QAChain",
     "PDFDocumentLoader",
     "WebDocumentLoader",
+    "TextDocumentLoader",
+    "CSVDocumentLoader",
 ]
