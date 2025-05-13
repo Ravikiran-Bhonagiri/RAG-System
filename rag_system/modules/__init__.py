@@ -1,5 +1,5 @@
 # rag_system/core/__init__.py
-from .chunker import Chunker
+from .chunker import Chunker, Chunker_V2
 from .embedder import Embedder
 from .vector_db import VectorDB
 from .retriever import Retriever
@@ -9,6 +9,7 @@ from .document_loader import PDFDocumentLoader, WebDocumentLoader, TextDocumentL
 
 __all__ = [ #This is optional but very good practice
     "Chunker",
+    "Chunker_V2",
     "Embedder",
     "VectorDB",
     "Retriever",
