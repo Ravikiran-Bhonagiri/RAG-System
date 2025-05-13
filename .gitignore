@@ -1,0 +1,50 @@
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+sdist/
+*.so
+*.swp         # Swap files (Vim, etc.)
+*.bak         # Backup files
+*.tmp         # Temporary files
+
+# Virtual environment
+.venv/
+venv/
+env/             # Another common name
+ENV/
+
+# OS-generated files
+Thumbs.db
+.DS_Store
+.DS_Store?      # Prevents 'resource fork' additions
+._*            # Resource forks
+*.swp
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini     # Windows-specific
+[Tt]rash*       # More trash variations
+
+# Log files
+*.log
+*.out
+
+# RAG Index
+rag_index/
+
+# Environment Variables (CRITICAL)
+.env
+
+# Jupyter Notebook (Optional, if you use them locally but don't want to commit)
+.ipynb_checkpoints/ # Checkpoint files
+*.ipynb
+
+
+# IDE-specific (Optional, example for VS Code)
+.vscode/
+*.code-workspace
