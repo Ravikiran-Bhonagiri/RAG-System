@@ -5,7 +5,7 @@ import json
 from dotenv import load_dotenv
 
 load_dotenv()
-sys.path.append("D:/RAG")
+sys.path.append("D:/RAG-System")
 
 from rag_system.system import RAGSystem
 # Example usage
